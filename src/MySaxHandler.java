@@ -4,12 +4,26 @@ import org.xml.sax.helpers.DefaultHandler;
 
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
-
+import java.util.List;
 
 
 public class MySaxHandler extends DefaultHandler {
+
+    BufferedWriter writer;
+
+    {
+        try {
+            writer = new BufferedWriter(new FileWriter("TestSaxSave"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     boolean foundLastName = false;
     boolean foundFirstName = false;
     boolean foundNationality = false;
@@ -18,6 +32,8 @@ public class MySaxHandler extends DefaultHandler {
     boolean foundYearDeath = false;
 
     boolean foundLine = false;
+
+
 
     @Override
     public void startElement(String uri, String localName, String qName,
@@ -50,9 +66,9 @@ public class MySaxHandler extends DefaultHandler {
 
     }
 
-    @Override
-    public void characters(char ch[], int start, int length)
+    public void characters(char[] ch, int start, int length)
             throws SAXException {
+
 
         if (foundLastName) {
             System.out.println("Last Name : " + new String(ch, start, length));
@@ -83,22 +99,26 @@ public class MySaxHandler extends DefaultHandler {
             foundLine = false;
         }
 
+
+
     }
     static void readXML(String path) {
         try {
             SAXParserFactory factory = SAXParserFactory.newInstance();
             SAXParser saxParser = factory.newSAXParser();
-
             DefaultHandler handler = new MySaxHandler();
 
             File file = new File(path);
             System.out.println("Reading by SAX parser");
             saxParser.parse(file, handler);
-
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
+
+
+
+
 
    /* @Override
     public void endElement(String uri, String localName, String qName)
