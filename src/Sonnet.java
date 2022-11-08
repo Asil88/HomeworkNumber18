@@ -1,4 +1,5 @@
 import javax.xml.bind.annotation.*;
+import java.util.Arrays;
 import java.util.List;
 
 @XmlRootElement
@@ -6,22 +7,17 @@ import java.util.List;
 public class Sonnet {
     @XmlAttribute
     private String type;
-   @XmlElement
-
-    private String author;
-    private String line;
-
-    List<Author> authors;
-    @XmlElement(name = "line")
-    List<Lines> lines;
+    @XmlElement(name = "author")
+    Author authors;
+    @XmlElementWrapper(name = "lines")
+    @XmlElement(name="line")
+    List<String> lines;
 
     public Sonnet() {
     }
 
-    public Sonnet(String type, String author, String line, List<Author> authors) {
+    public Sonnet(String type, String author, Author authors) {
         this.type = type;
-        this.author = author;
-        this.line = line;
         this.authors = authors;
     }
 
@@ -33,33 +29,22 @@ public class Sonnet {
         this.type = type;
     }
 
-    public String getAuthor() {
-        return author;
-    }
 
-    public void setAuthor(String author) {
-        this.author = author;
-    }
-
-    public String getLine() {
-        return line;
-    }
-
-    public void setLine(String line) {
-        this.line = line;
-    }
-
-    public List<Author> getAuthors() {
+    public Author getAuthors() {
         return authors;
     }
 
-    public void setAuthors(List<Author> authors) {
+    public void setAuthors(Author authors) {
         this.authors = authors;
     }
 
     @Override
     public String toString() {
-        return String.format("Sonnet:%s\n%s\n%s\n", type, author, line);
+        return "Sonnet{" +
+                "type='" + type + '\'' +
+                ", authors=" + authors +
+                ", lines=" + lines +
+                '}';
     }
 }
 

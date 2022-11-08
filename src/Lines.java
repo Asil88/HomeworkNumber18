@@ -1,25 +1,28 @@
-import java.util.ArrayList;
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
 
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Lines {
-ArrayList<String> lines = new ArrayList<>();
-    Lines(String line){}
+    String line;
 
-    public Lines(ArrayList<String> lines) {
-        this.lines = lines;
+    Lines() {
+
     }
 
-    public ArrayList<String> getLines() {
-        return lines;
+    public Lines(String line) {
+        this.line = line;
     }
 
-    public void setLines(ArrayList<String> lines) {
-        this.lines = lines;
+    public String getLine() {
+        return line;
+    }
+
+    public void setLine(String line) {
+        this.line = line;
     }
 
     @Override
     public String toString() {
-        return "Lines{" +
-                "lines=" + lines +
-                '}';
+        return "Lines{"+line + '}';
     }
 }

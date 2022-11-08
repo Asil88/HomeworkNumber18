@@ -1,3 +1,7 @@
+import javax.xml.bind.annotation.XmlAccessType;
+import javax.xml.bind.annotation.XmlAccessorType;
+
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Author {
     private String firstName;
     private String lastName;
@@ -5,7 +9,10 @@ public class Author {
     private String yearOfBirth;
     private String yearOfDeath;
 
-    public Author(String firstName, String lastName,String nationality,String yearOfBirth,String yearOfDeath) {
+    public Author() {
+    }
+
+    public Author(String firstName, String lastName, String nationality, String yearOfBirth, String yearOfDeath) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.nationality = nationality;
