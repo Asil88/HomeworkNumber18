@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="da69e161-4a64-4131-97fc-ff07f6767f99" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/glassfish_jaxb_runtime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_xml_bind_jaxb_api.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Lines.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/MyJaxabHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Root.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Sonnet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HomeworkNumber18.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HomeworkNumber18.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyDomHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyDomHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MySaxHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MySaxHandler.java" afterDir="false" />
+    <list default="true" id="da69e161-4a64-4131-97fc-ff07f6767f99" name="Changes" comment="task">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Author.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lines.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lines.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Sonnet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Sonnet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,12 +50,26 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="MyJaxabHandler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="MyJaxabHandler" />
+      <module name="HomeworkNumber18" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyJaxabHandler" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -76,6 +79,7 @@
       <option name="presentableId" value="Default" />
       <updated>1667138532536</updated>
       <workItem from="1667138534091" duration="65694000" />
+      <workItem from="1667934903617" duration="1178000" />
     </task>
     <task id="LOCAL-00001" summary="task">
       <created>1667459520473</created>
@@ -89,6 +93,17 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="task" />
@@ -111,6 +126,26 @@
           <url>file://$PROJECT_DIR$/src/MyDomHandler.java</url>
           <line>30</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyJaxabHandler.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyJaxabHandler.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyJaxabHandler.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/MyJaxabHandler.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/MySaxHandler.java</url>
